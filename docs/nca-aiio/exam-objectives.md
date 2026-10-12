@@ -48,5 +48,6 @@ title: 考纲要点
 
 ## 推荐阅读
 
+- 📝 **实战备考笔记（7 大高频易混考点）** → [notes/01-exam-focus-guide](./notes/01-exam-focus-guide.md)
 - 官方 Study Guide（中文版，Web PDF）：[直链](https://images.nvidia.cn/aem-dam/zh_cn/Solutions/training/certification/nvt-certification-exam-study-guide-aiio-web-cn.pdf)
 - [NVIDIA 官方认证页](https://www.nvidia.cn/training/certification/ai-infrastructure-operations-associate/)
