@@ -89,12 +89,29 @@
   color: var(--ifm-color-emphasis-600);
 }
 
-.badge {
-  font-size: 0.75rem;
-  padding: 2px 8px;
-  border-radius: 4px;
+/* CTA 引流区 */
+.cta-section {
+  margin-top: 3rem;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 1px solid var(--ifm-color-emphasis-200);
 }
 
-.badge-active { background: #fff3cd; color: #856404; }
-.badge-pending { background: #f0f0f0; color: #666; }
-.badge-planned { background: #d6e9ff; color: #004085; }
+.cta-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+.cta-section p {
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
