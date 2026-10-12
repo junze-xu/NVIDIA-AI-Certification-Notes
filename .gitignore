@@ -4,3 +4,7 @@ build/
 .cache/
 .env
 node_modules
+
+# Local private study materials (not for public repo)
+nca-*/
+ncp-*/
