@@ -3,11 +3,14 @@ build/
 .docusaurus/
 .cache/
 .env
-node_modules
 
 # Local private study materials (not for public repo)
-# Only match root-level directories, NOT docs/nca-*/docs/ncp-*/
+# These contain original practice questions and mock exams for future paid products
+# Only match root-level directories (with leading /), NOT docs/nca-*/docs/ncp-*/
 /nca-*/
 /ncp-*/
+
+# Internal management files (local only - not for GitHub)
+meta/
 ARCHIVE_INDEX.md
 PRODUCTS.md
