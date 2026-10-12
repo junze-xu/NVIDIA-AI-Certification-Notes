@@ -6,5 +6,8 @@ build/
 node_modules
 
 # Local private study materials (not for public repo)
-nca-*/
-ncp-*/
+# Only match root-level directories, NOT docs/nca-*/docs/ncp-*/
+/nca-*/
+/ncp-*/
+ARCHIVE_INDEX.md
+PRODUCTS.md
