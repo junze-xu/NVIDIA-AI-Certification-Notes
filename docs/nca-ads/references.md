@@ -3,19 +3,19 @@ sidebar_position: 3
 title: 参考资料
 ---
 
-# NCA-ADS 参考资料
+# NCA-ADS 参考资料与官方直链
 
-## 官方 Study Guide（仅英文版）
+## 官方文件
 
 | 资源 | 链接 |
 |---|---|
-| Study Guide | [NVIDIA 官方考试页](https://www.nvidia.com/en-us/training/certification/accelerated-data-science-associate/) |
+| 考试报名页 | [NVIDIA 官方报名](https://www.nvidia.cn/training/certification/#book-cn-exam) |
 
-> ⚠️ 官方仅发布英文版；社区中文译本存于个人站，不入本仓（衍生作品版权风险）。以英文版为准。
+## 延伸参考
 
-## 推荐阅读
-
-- [NVIDIA cuDF](https://developer.nvidia.com/)
-- [RAPIDS cuDF for Feature Engineering](https://docs.rapids.ai/)
+- [NVIDIA RAPIDS](https://developer.nvidia.com/rapids)
+- [NVIDIA Dask](https://www.nvidia.cn/ai-data-science/dask/)
 - [MLflow](https://mlflow.org/)
-- [NVIDIA Container Toolkit](https://developer.nvidia.com/)
+- [Weights & Biases](https://wandb.ai/)
+
+> ⚠️ 版权归 NVIDIA 所有；本仓只引用直链，不收录 PDF 副本。
