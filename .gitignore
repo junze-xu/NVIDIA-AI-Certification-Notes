@@ -1,7 +1,5 @@
-.DS_Store
-daily-log/
-private/
-*.pdf
-*.zip
-*.7z
-__pycache__/
+node_modules/
+build/
+.docusaurus/
+.cache/
+.env

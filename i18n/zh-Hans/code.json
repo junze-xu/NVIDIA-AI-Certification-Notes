@@ -1,0 +1,14 @@
+{
+  "theme.NotFound.title": {
+    "message": "页面未找到",
+    "description": "404 标题"
+  },
+  "theme.NotFound.content": {
+    "message": "您访问的页面不存在。",
+    "description": "404 提示"
+  },
+  "theme.NotFound.button": {
+    "message": "返回首页",
+    "description": "404 按钮"
+  }
+}

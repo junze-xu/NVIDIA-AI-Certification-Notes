@@ -1,0 +1,14 @@
+{
+  "theme.NotFound.title": {
+    "message": "Page Not Found",
+    "description": "404 title"
+  },
+  "theme.NotFound.content": {
+    "message": "The page you are looking for does not exist.",
+    "description": "404 message"
+  },
+  "theme.NotFound.button": {
+    "message": "Back to Home",
+    "description": "404 button"
+  }
+}
