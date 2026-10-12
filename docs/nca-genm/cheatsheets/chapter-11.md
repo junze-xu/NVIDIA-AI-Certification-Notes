@@ -1,7 +1,7 @@
 ---
 id: chapter-11
 title: "第 11 章：真实世界多模态应用 — 速查表"
-description："医疗影像、自动驾驶、内容生成、RAG 多模态"
+description: "医疗影像、自动驾驶、内容生成、RAG 多模态"
 sidebar_position: 11
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: chapter-10
 title: "第 10 章：生成式 AI 安全与伦理 — 速查表"
-description："负责任 AI、偏见检测、安全防护、护栏"
+description: "负责任 AI、偏见检测、安全防护、护栏"
 sidebar_position: 10
 ---
 

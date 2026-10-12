@@ -1,7 +1,7 @@
 ---
 id: chapter-07
 title: "第 7 章：训练多模态模型 — 速查表"
-description："迁移学习、微调策略、分布式训练、混合精度"
+description: "迁移学习、微调策略、分布式训练、混合精度"
 sidebar_position: 7
 ---
 

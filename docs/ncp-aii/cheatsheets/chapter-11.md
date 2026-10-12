@@ -1,7 +1,7 @@
 ---
 id: chapter-11
 title: "第 11 章：安全与合规 — 速查表"
-description："访问控制、数据加密、审计、合规标准"
+description: "访问控制、数据加密、审计、合规标准"
 sidebar_position: 11
 ---
 

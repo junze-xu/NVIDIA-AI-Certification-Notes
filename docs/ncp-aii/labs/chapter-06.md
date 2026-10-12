@@ -1,7 +1,7 @@
 ---
 id: chapter-06
 title: "第 6 章实验：电源、制冷与链路验证"
-description："功率预算、BER 测试、光模块诊断实验"
+description: "功率预算、BER 测试、光模块诊断实验"
 sidebar_position: 6
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: chapter-12
 title: "第 12 章：考试策略模拟 — 速查表"
-description："考试格式、时间管理、排除策略、领域回顾"
+description: "考试格式、时间管理、排除策略、领域回顾"
 sidebar_position: 12
 ---
 

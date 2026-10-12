@@ -1,7 +1,7 @@
 ---
 id: chapter-09
 title: "第 9 章：NVIDIA 多模态软件栈 — 速查表"
-description："NIM、NeMo、Triton、BioNeMo、MONAI"
+description: "NIM、NeMo、Triton、BioNeMo、MONAI"
 sidebar_position: 9
 ---
 

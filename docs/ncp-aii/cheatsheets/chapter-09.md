@@ -1,7 +1,7 @@
 ---
 id: chapter-09
 title: "第 9 章：Slurm 调度与训练/推理规划 — 速查表"
-description："Slurm vs Kubernetes、Slurm 命令、GPU 分配"
+description: "Slurm vs Kubernetes、Slurm 命令、GPU 分配"
 sidebar_position: 9
 ---
 

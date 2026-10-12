@@ -1,7 +1,7 @@
 ---
 id: chapter-07
 title: "第 7 章：集群管理与监控 — 速查表"
-description："DCGM、集群监控、节点管理、健康检查"
+description: "DCGM、集群监控、节点管理、健康检查"
 sidebar_position: 7
 ---
 

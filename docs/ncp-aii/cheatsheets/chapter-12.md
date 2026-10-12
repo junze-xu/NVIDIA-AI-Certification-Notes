@@ -1,7 +1,7 @@
 ---
 id: chapter-12
 title: "第 12 章：全真模拟与时间管理 — 速查表"
-description："考试格式、节奏检查点、排除策略"
+description: "考试格式、节奏检查点、排除策略"
 sidebar_position: 12
 ---
 

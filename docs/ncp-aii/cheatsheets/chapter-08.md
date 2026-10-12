@@ -1,7 +1,7 @@
 ---
 id: chapter-08
 title: "第 8 章：多节点扩展 — 速查表"
-description："多节点集群、GPU 互连、扩展策略、NVLink vs PCIe"
+description: "多节点集群、GPU 互连、扩展策略、NVLink vs PCIe"
 sidebar_position: 8
 ---
 

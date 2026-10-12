@@ -1,7 +1,7 @@
 ---
 id: chapter-10
 title: "第 10 章：故障排除与维护 — 速查表"
-description："GPU 故障诊断、网络故障、存储故障、日志分析"
+description: "GPU 故障诊断、网络故障、存储故障、日志分析"
 sidebar_position: 10
 ---
 

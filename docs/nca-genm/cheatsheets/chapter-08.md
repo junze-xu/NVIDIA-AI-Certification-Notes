@@ -1,7 +1,7 @@
 ---
 id: chapter-08
 title: "第 8 章：评估与对齐 — 速查表"
-description："多模态评估指标、RLHF、幻觉、Ground Truth"
+description: "多模态评估指标、RLHF、幻觉、Ground Truth"
 sidebar_position: 8
 ---
 
