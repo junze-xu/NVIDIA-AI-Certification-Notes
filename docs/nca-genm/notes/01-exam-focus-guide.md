@@ -96,4 +96,4 @@ Attention(Q, K, V) = softmax(QK^T / √d_k) · V
 
 ---
 
-> 📌 **完整速查表 + Anki 闪卡 + 模拟卷**：关注公众号「NVIDIA 认证备考」回复「NCA-GENM」领取 PDF 全家桶。
+> 📌 **完整速查表 + 知识卡片 + 模拟卷**：关注公众号「JunzeXuInfra」回复「NCA-GENM」领取 PDF 全家桶。
