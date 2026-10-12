@@ -4,20 +4,22 @@ NCA-ADS · 加速数据科学 RAPIDS
 
 本仓库对应英伟达 NCA 认证四门初级考试中的 **NCA-ADS（加速数据科学）**，聚焦 NVIDIA RAPIDS 生态（cuDF、cuML、Dask），用 GPU 全栈加速数据科学工作流。
 
-> ⚠️ 本门考试**无官方中文版学习指南**，仓库同时收录了官方英文原版 PDF 和第三方中文翻译版（仅供参考，以英文版为准）。
+> ⚠️ 本门考试**无官方中文版学习指南**，仅有英文版 Study Guide。官方介绍/参数/人群见 [overview.md](overview.md)，考纲逐条要点（英文翻译版）见 [exam-objectives.md](exam-objectives.md)。
 
 ---
 
 ## 考试基本信息
 
+> 官方介绍、参数、面向人群、推荐培训见 [overview.md](overview.md)。
+
 | 项目 | 详情 |
 |---|---|
 | 考试编号 | NCA-ADS |
 | 考试时长 | 60 分钟 |
-| 题型 | 50–60 道单选 / 多选题 |
+| 题型 | 50–60 道选择题 |
 | 语言 | 支持中文（但部分题干可能仍涉及英文术语） |
 | 及格线 | 约 70% |
-| 考试费用 | 约 $100 美元 |
+| 考试费用 | 960 元 |
 | 证书有效期 | 2 年 |
 | [官方考试页面](https://www.nvidia.cn/training/certification/accelerated-data-science-associate/) | ↗ |
 
@@ -41,19 +43,18 @@ NCA-ADS · 加速数据科学 RAPIDS
 ## 本仓库结构
 
 ```
-NCA-ADS-test/
-├── README.md              # 本文件：考试概览 + 考点大纲 + 中文翻译声明
-├── overview.md            # 学完整门后产出的知识梳理笔记（待填充）
-├── dli-courses.md         # 官方 DLI 免费课程清单 + 学习顺序建议
-├── assets/
-│   ├── NCA-ADS-study-guide-en.pdf   # 官方英文原版
-│   └── NCA-ADS-study-guide-zh.pdf   # 第三方中文翻译版（非官方，仅供参考）
-├── flashcards/            # 考点速记卡（Markdown）
-│   └── _template.md
-├── labs/                  # 动手实操记录 + 截图 + 命令输出
-│   └── _placeholder.md
-└── daily-log/             # 每日学习沉淀
-    └── _placeholder.md
+ads/
+├── README.md              # 本文件：考试概览 + 考点大纲
+├── overview.md            # 官方《科目解读》章节
+├── exam-objectives.md    # 官方 Study Guide 考纲逐条要点（英文翻译版）
+├── references.md         # 官方 PDF 直链 + 推荐阅读链接
+├── notes/                # 考纲域笔记
+├── cheatsheets/          # 速查卡
+├── flashcards/           # 闪卡
+├── questions/            # 自编样题
+├── labs/                 # 动手实操
+├── mock/                 # 留壳导流
+└── dli-courses.md        # DLI 课程清单
 ```
 
 ---
@@ -92,6 +93,7 @@ NCA-ADS-test/
 
 - [x] 挂官方 Study Guide 直链（不存副本）
 - [x] 整理考点大纲
+- [x] 官方科目解读章节 → overview.md
 - [ ] 完成 3 门 DLI 课程
 - [ ] Colab 跑 cuDF vs pandas 对比 notebook
 - [ ] 产出 overview.md 完整知识梳理

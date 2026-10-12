@@ -2,20 +2,22 @@ NCA-GENM · 多模态生成式 AI
 
 > NVIDIA Certified Associate – Generative AI Multimodal
 
-本仓库对应英伟达 NCA 认证四门初级考试中的 **NCA-GENM（多模态生成式 AI）**，涉及 CLIP、扩散模型（文生图）、图像/音频/文本融合等多模态技术，也是和你食品带货创业方向最协同的一门。
+本仓库对应英伟达 NCA 认证四门初级考试中的 **NCA-GENM（多模态生成式 AI）**，涉及 CLIP、扩散模型（文生图）、图像/音频/文本融合等多模态技术。官方介绍/参数/人群见 [overview.md](overview.md)，考纲逐条要点见 [exam-objectives.md](exam-objectives.md)。
 
 ---
 
 ## 考试基本信息
 
+> 官方介绍、参数、面向人群、推荐培训见 [overview.md](overview.md)。
+
 | 项目 | 详情 |
 |---|---|
 | 考试编号 | NCA-GENM |
 | 考试时长 | 60 分钟 |
-| 题型 | 50–60 道单选 / 多选题 |
+| 题型 | 50–60 道选择题 |
 | 语言 | 支持中文 |
 | 及格线 | 约 70% |
-| 考试费用 | 约 $100 美元 |
+| 考试费用 | 960 元 |
 | 证书有效期 | 2 年 |
 | [官方考试页面](https://www.nvidia.cn/training/certification/generative-ai-multimodal-associate/) | ↗ |
 
@@ -38,18 +40,18 @@ NCA-GENM · 多模态生成式 AI
 ## 本仓库结构
 
 ```
-NCA-GENM-test/
+genm/
 ├── README.md              # 本文件：考试概览 + 考点大纲
-├── overview.md            # 学完整门后产出的知识梳理笔记（待填充）
-├── dli-courses.md         # 官方 DLI 免费课程清单 + 学习顺序建议
-├── assets/
-│   └── study-guide.pdf    # 官方学习指南 PDF
-├── flashcards/            # 考点速记卡（Markdown）
-│   └── _template.md
-├── labs/                  # 动手实操记录 + 截图 + 命令输出
-│   └── _placeholder.md
-└── daily-log/             # 每日学习沉淀
-    └── _placeholder.md
+├── overview.md            # 官方《科目解读》章节
+├── exam-objectives.md    # 官方 Study Guide 考纲逐条要点 + 阅读材料
+├── references.md         # 官方 PDF 直链 + 推荐阅读链接
+├── notes/                # 考纲域笔记
+├── cheatsheets/          # 速查卡
+├── flashcards/           # 闪卡
+├── questions/            # 自编样题
+├── labs/                 # 动手实操
+├── mock/                 # 留壳导流
+└── dli-courses.md        # DLI 课程清单
 ```
 
 ---
@@ -91,6 +93,7 @@ NCA-GENM-test/
 
 - [x] 挂官方 Study Guide 直链（不存副本）
 - [x] 整理考点大纲
+- [x] 官方科目解读章节 → overview.md
 - [ ] 完成 6 门 DLI 课程
 - [ ] 产出 overview.md 完整知识梳理
 - [ ] 完成文生图 labs 实操 + 带货素材产出

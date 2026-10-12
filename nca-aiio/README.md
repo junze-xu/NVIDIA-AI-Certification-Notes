@@ -10,7 +10,8 @@
 | 考试时长 | 60 分钟 · 50–60 道单选/多选 |
 | 语言 | 支持中文 |
 | 及格线 | 约 70% |
-| 考试费用 | 约 $100 ｜ [官方考试页](https://www.nvidia.cn/training/certification/ai-infrastructure-operations-associate/) |
+| 考试费用 | 960 元 ｜ [官方考试页](https://www.nvidia.cn/training/certification/ai-infrastructure-operations-associate/) |
+| 官方介绍与推荐培训 | [overview.md](overview.md) |
 | 证书有效期 | 2 年 |
 | 官方 Study Guide（直链） | [中文 web 版 PDF](https://images.nvidia.cn/aem-dam/zh_cn/Solutions/training/certification/nvt-certification-exam-study-guide-aiio-web-cn.pdf) |
 
@@ -55,12 +56,25 @@
 
 ## 目录
 
-`notes/`（考纲域笔记）· `cheatsheets/` · `flashcards/` · `questions/`（自编样题）· `labs/`（真机+verify）· `mock/`（整卷在 49 元冲刺包，不进仓）· [dli-courses.md](dli-courses.md)
+```
+├── overview.md            # 官方《科目解读》章节（介绍/参数/人群/培训）
+├── exam-objectives.md    # 官方 Study Guide 考纲逐条要点 + 阅读材料
+├── references.md         # 官方 PDF 直链 + 推荐阅读链接汇总
+├── notes/                # 考纲域笔记（按域编号）
+├── cheatsheets/          # 速查卡
+├── flashcards/           # 闪卡
+├── questions/            # 自编样题 + 官方演示题
+├── labs/                 # 真机实操记录
+├── mock/                 # 留壳导流（整卷不进仓）
+└── dli-courses.md        # DLI 课程清单与学习顺序
+```
 
 ## 进度
 
 - [x] 官方 Study Guide 挂直链（不存副本）
 - [x] 考点大纲 + 覆盖度对照表 v0.1
+- [x] 官方科目解读章节 → overview.md
+- [x] 官方演示题收录 → [questions/01-sample.md](questions/01-sample.md)
 - [ ] 对照表与官方 exam objectives 逐条核对
 - [ ] 完成 DLI 课程 S-NP-04（进行中：单元 7 已总结）
 - [ ] labs：nvidia-smi / DCGM / 拓扑实操

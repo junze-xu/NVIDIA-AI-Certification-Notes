@@ -1,4 +1,4 @@
-# NVIDIA AI 认证中文资料库（非官方）· JunzeXu 的转型实录
+# NVIDIA AI 认证中文资料库（非官方）· JunzeXu
 
 > ⚠️ 本仓库为非官方个人学习笔记，与 NVIDIA 无关联；商标归 NVIDIA Corporation。官方 Study Guide 只挂直链、不存副本；全部题目为自编题，不含真题。
 
@@ -8,7 +8,7 @@
 
 ## 这是什么
 
-一个做了多年 Linux / 嵌入式 / 运维的人，公开转 AI Infra 的全部学习证据：NVIDIA 认证备考笔记（NCA 四门 + NCP 主线三门）、真机 labs、中英术语对照。
+NVIDIA 认证备考笔记（NCA 四门 + NCP 五门）、真机 labs、中英术语对照。每门考试的考纲来自官方 Study Guide，逐条拆解并标注覆盖度。
 
 给三种人用：**备考的人**（查覆盖度对照表）、**同样想转型的运维人**（按我的路线抄近道）、**招聘我的人**（看真实的动手记录，不是简历形容词）。
 
@@ -16,35 +16,63 @@
 
 每门考试的 README 里有一张 **覆盖度对照表**：官方考纲要点逐条一行 → 点进去有文件就是内容，🟡 是进行中，⬜ 是未开始——**你随时能验证我有没有漏考点，也随时能抓到我还没学完**。
 
+考试目录下还附了 `overview.md`（官方《科目解读》原文）和 `references.md`（全部官方 PDF 直链 + 推荐阅读），入口处汇总、细节处深挖。
+
 ## 科目状态
+
+### NCA 初级（Associate）
 
 | 考试 | 名称 | 权重最高域 | 状态 | 入口 |
 |---|---|---|---|---|
-| NCA-AIIO | AI 基础架构与运维 | AI 基础架构 40% | 🟡 进行中 | [aiio/](aiio/README.md) |
-| NCA-GENL | 生成式 AI 与大语言模型 | 核心 ML 知识 30% | ⬜ 未开始 | [genl/](genl/README.md) |
-| NCA-GENM | 多模态生成式 AI | 实验 25% | ⬜ 未开始 | [genm/](genm/README.md) |
-| NCA-ADS | 加速数据科学 RAPIDS | 数据处理 23% | ⬜ 未开始 | [ads/](ads/README.md) |
-| NCP-AII / AIO / AAI | Professional 级 | — | ⬜ 规划 | [ncp/](ncp/README.md) |
+| NCA-AIIO | AI 基础架构与运维 | AI 基础架构 40% | 🟡 进行中 | [nca-aiio/](nca-aiio/README.md) |
+| NCA-GENL | 生成式 AI 与大语言模型 | 核心 ML 知识 30% | ⬜ 未开始 | [nca-genl/](nca-genl/README.md) |
+| NCA-GENM | 多模态生成式 AI | 实验 25% | ⬜ 未开始 | [nca-genm/](nca-genm/README.md) |
+| NCA-ADS | 加速数据科学 RAPIDS | 数据处理 23% | ⬜ 未开始 | [nca-ads/](nca-ads/README.md) |
+
+### NCP 中级（Professional）
+
+| 考试 | 名称 | 前置 | 费用 | 状态 | 入口 |
+|---|---|---|---|---|---|
+| NCP-AII | AI Infrastructure Professional | ← NCA-AIIO | 2880 元 | ⬜ 规划 | [ncp-aii/](ncp-aii/README.md) |
+| NCP-AIO | AI Operations Professional | ← NCP-AII | 2880 元 | ⬜ 规划 | [ncp-aio/](ncp-aio/README.md) |
+| NCP-AIN | AI Networking Professional | ← NCP-AII | 2880 元 | ⬜ 规划 | [ncp-ain/](ncp-ain/README.md) |
+| NCP-GENL | Generative AI LLMs Professional | ← NCA-GENL | 1580 元 | ⬜ 规划 | [ncp-genl/](ncp-genl/README.md) |
+| NCP-AAI | Agentic AI Professional | ← NCP-GENL | 1580 元 | ⬜ 规划 | [ncp-aai/](ncp-aai/README.md) |
+| NCP-ADS | Accelerated Data Science Professional | ← NCA-ADS | 1580 元 | ⬜ 规划 | [ncp-ads/](ncp-ads/README.md) |
+
+> ⚠️ NCP-OUSD（OpenUSD 开发）偏航科目，本仓不做覆盖。
 
 ## 内容边界（先说清楚，免得互相误会）
 
-- **本仓免费公开**：学习笔记、速查卡、闪卡、中英术语对照、真机 labs（脚本+输出+verify）、每域自编样题 10–15 道
+- **本仓免费公开**：学习笔记、速查卡、闪卡、中英术语对照、真机 labs（脚本+输出+verify）、每域自编样题 10–15 道、官方 Study Guide 要点翻译
 - **站外付费（49 元冲刺包）**：整套模拟卷、错题详解——`mock/` 目录刻意留空并有说明
-- **红线**：官方 PDF、真题/回忆题（dumps）永远不进仓、也不进付费包，详见 [meta/MAINTENANCE.md](meta/MAINTENANCE.md)
+- **红线**：官方 PDF 文件本身、真题/回忆题（dumps）永远不入仓、也不进付费包，详见 [meta/MAINTENANCE.md](meta/MAINTENANCE.md)
 
 ## 仓库地图
 
 ```
-├── aiio|genl|genm|ads/   # 每门一目录：notes/ cheatsheets/ flashcards/ questions/ labs/ mock/
-├── ncp/                  # NCP 三门规划占位
+├── nca-aiio|nca-genl|nca-genm|nca-ads/   # NCA 初级四门
+├── ncp-aii|aio|ain|genl|aai|ads/   # NCP 中级六门（规划中）
 ├── common/               # 中英术语对照 · 各目录模板
 └── meta/                 # 免责 · 变更记录 · 维护规则 · LESSONS 踩坑手册
 ```
 
-## 转型叙事与陪伴
+### 每门考试标准结构
 
-- 7 天 × 8 小时速通四门的完整日志（含每日时间盒）：个人站 journal → `2rnlbxy4.qwenwork.host`
-- 运维/嵌入式 → AI Infra 转型陪跑、1v1 诊断：<!-- 公众号注册后在此放名称与二维码 -->
+```
+<exam>/
+├── README.md              # 考试概览 + 覆盖度对照表 + 进度清单
+├── overview.md            # 官方《科目解读》章节（介绍/参数/人群/培训）
+├── exam-objectives.md    # 官方 Study Guide 考纲逐条要点 + 推荐阅读（NCA 级已交付）
+├── references.md         # 官方 PDF 直链 + 推荐阅读链接汇总（NCA 级已交付）
+├── notes/                # 考纲域笔记（按域编号）
+├── cheatsheets/          # 速查卡
+├── flashcards/           # 闪卡
+├── questions/            # 自编样题 + 官方演示题
+├── labs/                 # 真机实操记录（脚本+输出+verify）
+├── mock/                 # 留壳导流（整卷不进仓）
+└── dli-courses.md        # 官方 DLI 免费课程清单 + 学习顺序建议
+```
 
 ## 许可与引用
 
@@ -54,4 +82,4 @@
 
 发现题目或数字错误 → 开 Issue，改正后写进 CHANGELOG 并感谢你；后续 Discussions 兼作考生错题本。
 
-—— [JunzeXu](https://github.com/junze-xu)，苏州，一个正在考证的运维。
+—— [JunzeXu](https://github.com/junze-xu)，苏州。
