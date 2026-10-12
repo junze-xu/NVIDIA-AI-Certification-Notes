@@ -1,0 +1,8 @@
+# License / 许可
+本仓库采用双许可：
+- 文字与图表内容：CC BY-NC-SA 4.0（署名-非商业性使用-相同方式共享）
+  条款全文: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans
+- labs/ 及可执行代码：MIT
+  条款全文: https://opensource.org/license/mit
+NVIDIA 官方文件不在本仓库内（仅挂官方直链），其版权归 NVIDIA Corporation 所有。
+商用授权请联系（见 README 联系方式）。
