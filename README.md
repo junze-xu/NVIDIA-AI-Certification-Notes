@@ -4,7 +4,7 @@
 
 **2026-10-12 开仓 · 目标：2026 年内完成 NCA-AIIO 首考（以官方预约为准）· 每天用 commit 公开进度**
 
-![license](https://img.shields.io/badge/license-CC--BY--NC--SA--4.0-green) ![status](https://img.shields.io/badge/status-进行中-orange) ![lang](https://img.shields.io/badge/lang-中文-blue)
+![license](https://img.shields.io/badge/license-CC--BY--NC--SA--4.0-green) ![lang](https://img.shields.io/badge/lang-中文-blue)
 
 ## 这是什么
 
@@ -14,7 +14,7 @@ NVIDIA 认证备考笔记（NCA 四门 + NCP 五门）、真机 labs、中英术
 
 ## 怎么读这个仓库
 
-每门考试的 README 里有一张 **覆盖度对照表**：官方考纲要点逐条一行 → 点进去有文件就是内容，🟡 是进行中，⬜ 是未开始——**你随时能验证我有没有漏考点，也随时能抓到我还没学完**。
+每门考试的 README 里有一张 **覆盖度对照表**：官方考纲要点逐条一行 → 点进去有文件就是已完成，空的表示还没写——**你随时能验证我有没有漏考点，也随时能抓到我还没学完**。
 
 考试目录下还附了 `overview.md`（官方《科目解读》原文）和 `references.md`（全部官方 PDF 直链 + 推荐阅读），入口处汇总、细节处深挖。
 
@@ -22,23 +22,23 @@ NVIDIA 认证备考笔记（NCA 四门 + NCP 五门）、真机 labs、中英术
 
 ### NCA 初级（Associate）
 
-| 考试 | 名称 | 权重最高域 | 状态 | 入口 |
-|---|---|---|---|---|
-| NCA-AIIO | AI 基础架构与运维 | AI 基础架构 40% | 🟡 进行中 | [nca-aiio/](nca-aiio/README.md) |
-| NCA-GENL | 生成式 AI 与大语言模型 | 核心 ML 知识 30% | ⬜ 未开始 | [nca-genl/](nca-genl/README.md) |
-| NCA-GENM | 多模态生成式 AI | 实验 25% | ⬜ 未开始 | [nca-genm/](nca-genm/README.md) |
-| NCA-ADS | 加速数据科学 RAPIDS | 数据处理 23% | ⬜ 未开始 | [nca-ads/](nca-ads/README.md) |
+| 考试 | 名称 | 权重最高域 | 入口 |
+|---|---|---|---|
+| NCA-AIIO | AI 基础架构与运维 | AI 基础架构 40% | [nca-aiio/](nca-aiio/README.md) |
+| NCA-GENL | 生成式 AI 与大语言模型 | 核心 ML 知识 30% | [nca-genl/](nca-genl/README.md) |
+| NCA-GENM | 多模态生成式 AI | 实验 25% | [nca-genm/](nca-genm/README.md) |
+| NCA-ADS | 加速数据科学 RAPIDS | 数据处理 23% | [nca-ads/](nca-ads/README.md) |
 
 ### NCP 中级（Professional）
 
-| 考试 | 名称 | 前置 | 费用 | 状态 | 入口 |
-|---|---|---|---|---|---|
-| NCP-AII | AI Infrastructure Professional | ← NCA-AIIO | 2880 元 | ⬜ 规划 | [ncp-aii/](ncp-aii/README.md) |
-| NCP-AIO | AI Operations Professional | ← NCP-AII | 2880 元 | ⬜ 规划 | [ncp-aio/](ncp-aio/README.md) |
-| NCP-AIN | AI Networking Professional | ← NCP-AII | 2880 元 | ⬜ 规划 | [ncp-ain/](ncp-ain/README.md) |
-| NCP-GENL | Generative AI LLMs Professional | ← NCA-GENL | 1580 元 | ⬜ 规划 | [ncp-genl/](ncp-genl/README.md) |
-| NCP-AAI | Agentic AI Professional | ← NCP-GENL | 1580 元 | ⬜ 规划 | [ncp-aai/](ncp-aai/README.md) |
-| NCP-ADS | Accelerated Data Science Professional | ← NCA-ADS | 1580 元 | ⬜ 规划 | [ncp-ads/](ncp-ads/README.md) |
+| 考试 | 名称 | 前置 | 费用 | 入口 |
+|---|---|---|---|---|
+| NCP-AII | AI Infrastructure Professional | ← NCA-AIIO | 2880 元 | [ncp-aii/](ncp-aii/README.md) |
+| NCP-AIO | AI Operations Professional | ← NCP-AII | 2880 元 | [ncp-aio/](ncp-aio/README.md) |
+| NCP-AIN | AI Networking Professional | ← NCP-AII | 2880 元 | [ncp-ain/](ncp-ain/README.md) |
+| NCP-GENL | Generative AI LLMs Professional | ← NCA-GENL | 1580 元 | [ncp-genl/](ncp-genl/README.md) |
+| NCP-AAI | Agentic AI Professional | ← NCP-GENL | 1580 元 | [ncp-aai/](ncp-aai/README.md) |
+| NCP-ADS | Accelerated Data Science Professional | ← NCA-ADS | 1580 元 | [ncp-ads/](ncp-ads/README.md) |
 
 > ⚠️ NCP-OUSD（OpenUSD 开发）偏航科目，本仓不做覆盖。
 
