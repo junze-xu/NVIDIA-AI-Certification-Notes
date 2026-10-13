@@ -60,8 +60,9 @@ const config: Config = {
         },
         {href: '/about', label: '关于', position: 'left'},
         {
-          type: 'localeDropdown',
+          type: 'html',
           position: 'right',
+          value: '<span title="Use Chrome/Edge built-in translation" style="font-size:0.8rem;opacity:0.7;cursor:help;">🌐 EN via browser</span>',
         },
         {
           href: 'https://github.com/junze-xu/NVIDIA-AI-Certification-Notes',

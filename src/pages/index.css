@@ -48,6 +48,20 @@
   transition: transform 0.15s, box-shadow 0.15s;
 }
 
+.exam-card--link {
+  text-decoration: none !important;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+
+.exam-card--link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  text-decoration: none !important;
+  color: inherit;
+}
+
 .exam-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
@@ -95,16 +109,17 @@
   padding: 2.5rem 2rem;
   text-align: center;
   border-radius: 12px;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: var(--ifm-color-emphasis-100);
   border: 1px solid var(--ifm-color-emphasis-200);
 }
 
 .cta-section h2 {
   margin-bottom: 0.75rem;
+  color: var(--ifm-heading-color);
 }
 
 .cta-section p {
-  color: var(--ifm-color-emphasis-700);
+  color: var(--ifm-color-content);
   margin-bottom: 1.5rem;
   font-size: 1.05rem;
 }
