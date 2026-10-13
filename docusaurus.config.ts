@@ -12,12 +12,6 @@ const config: Config = {
   projectName: 'NVIDIA-AI-Certification-Notes',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  headTags: [
-    // 禁止 Chrome/Edge 自动翻译弹窗，避免破坏 SPA 路由
-    // 用户仍可通过右键菜单手动翻译
-    {tagName: 'meta', attributes: {name: 'google', content: 'notranslate'}},
-    {tagName: 'meta', attributes: {'http-equiv': 'Content-Language', content: 'zh-Hans'}},
-  ],
   i18n: {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans', 'en'],
