@@ -12,6 +12,7 @@ const config: Config = {
   projectName: 'NVIDIA-AI-Certification-Notes',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  clientModules: ['./src/translate-client-module.ts'],
   i18n: {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans', 'en'],
