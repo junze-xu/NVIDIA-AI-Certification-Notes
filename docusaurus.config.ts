@@ -15,10 +15,9 @@ const config: Config = {
   clientModules: ['./src/translate-client-module.ts'],
   i18n: {
     defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans', 'en'],
+    locales: ['zh-Hans'],
     localeConfigs: {
       'zh-Hans': {label: '中文', direction: 'ltr', htmlLang: 'zh-Hans'},
-      en: {label: 'English', direction: 'ltr', htmlLang: 'en'},
     },
   },
   presets: [

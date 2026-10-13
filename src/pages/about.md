@@ -35,7 +35,7 @@ NVIDIA 认证备考站是一个非官方的个人学习笔记集合，覆盖 NCA
 
 ## 致谢
 
-备考资料灵感来源：TechNuggets Academy 系列课程（YouTube / GitHub 公开），已按考试代码重新编排并中文化。
+备考资料灵感来源：TechNuggets Academy 系列课程（YouTube / GitHub 公开）。
 
 ## 反馈
 
