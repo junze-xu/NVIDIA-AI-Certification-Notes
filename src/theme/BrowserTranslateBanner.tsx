@@ -1,60 +1,51 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
-import { useLocation } from '@docusaurus/router';
 
-/* ------------------------------------------------------------------ */
-/*  一次性 DOM 遍历：给所有 <code> 注入 notranslate                      */
-/*  用 TreeWalker，不监听变化，避免和浏览器翻译死循环                      */
-/* ------------------------------------------------------------------ */
-function markCodeNoTranslate(root: ParentNode) {
-  const walker = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT);
-  let node: Element | null = walker.nextNode() as Element | null;
-  while (node) {
-    if (node.nodeName === 'CODE' || node.classList.contains('prism-code')) {
-      node.classList.add('notranslate');
-      node.setAttribute('translate', 'no');
-    }
-    node = walker.nextNode() as Element | null;
-  }
+/**
+ * 浏览器原生翻译 — 纯提示组件
+ *
+ * 不做任何 DOM 修改、不加 notranslate class，
+ * 完全交给浏览器自己的翻译引擎处理。
+ *
+ * Chrome/Edge 默认就不会翻译 <code> <pre> 等代码元素，
+ * 不需要我们干预。
+ */
+
+/**
+ * 检测浏览器是否"可能是英文环境"
+ */
+function isLikelyEnglishUser(): boolean {
+  if (typeof navigator === 'undefined') return false;
+
+  const langs = navigator.languages || [navigator.language || ''];
+  // 所有首选语言都不是中文 → 判定为可能需要翻译
+  return !langs.some((l) => l.toLowerCase().startsWith('zh'));
 }
 
-/* ------------------------------------------------------------------ */
-/*  组件                                                                */
-/* ------------------------------------------------------------------ */
 export default function BrowserTranslateBanner() {
-  const location = useLocation();
-  const [showBanner, setShowBanner] = useState(false);
-  const dismissedRef = useRef(false);
+  const [show, setShow] = useState(false);
+  const dismissed = useRef(false);
 
-  /* ---------- 1. 浏览器语言检测 + 提示条 ---------- */
   useEffect(() => {
-    if (typeof navigator === 'undefined') return;
-    if (navigator.language?.startsWith('zh')) return;           // 中文无需提示
-    if (sessionStorage.getItem('banner-dismissed')) return;      // 已关闭过
+    if (!isLikelyEnglishUser()) return;
+    if (sessionStorage.getItem('trans-banner-dismissed')) {
+      dismissed.current = true;
+      return;
+    }
 
     const t = setTimeout(() => {
-      if (!dismissedRef.current) setShowBanner(true);
-    }, 1500);
+      if (!dismissed.current) setShow(true);
+    }, 2000);
+
     return () => clearTimeout(t);
   }, []);
 
   const handleDismiss = useCallback(() => {
-    dismissedRef.current = true;
-    setShowBanner(false);
-    sessionStorage.setItem('banner-dismissed', '1');
+    dismissed.current = true;
+    setShow(false);
+    sessionStorage.setItem('trans-banner-dismissed', '1');
   }, []);
 
-  /* ---------- 2. SPA 路由切换后重新标记代码块 ---------- */
-  useEffect(() => {
-    const id = requestAnimationFrame(() => markCodeNoTranslate(document.body));
-    return () => cancelAnimationFrame(id);
-  }, [location.pathname]);
-
-  /* ---------- 3. 首屏标记 ---------- */
-  useEffect(() => {
-    markCodeNoTranslate(document.body);
-  }, []);
-
-  if (!showBanner) return null;
+  if (!show) return null;
 
   return (
     <div className="browser-translate-banner" role="alert">
@@ -62,15 +53,14 @@ export default function BrowserTranslateBanner() {
         <span aria-hidden="true" className="browser-translate-banner__icon">🌐</span>
         <div className="browser-translate-banner__text">
           <strong>This page is in Chinese.</strong>{' '}
-          Right-click → &quot;Translate to English&quot; in Chrome/Edge.
-          <br />
+          Use Chrome/Edge built-in translate: right-click → &quot;Translate to English&quot;.
           <span className="browser-translate-banner__hint">
-            本站为中文，Chrome/Edge 用户可右键 → &quot;翻译成 English&quot; 查看英文版，代码不受影响。
+            当前站点仅中文，Chrome/Edge 可右键一键翻英。
           </span>
         </div>
         <button
           type="button"
-          aria-label="关闭提示"
+          aria-label="Dismiss"
           className="browser-translate-banner__close"
           onClick={handleDismiss}
         >
