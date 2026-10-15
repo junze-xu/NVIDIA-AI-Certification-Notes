@@ -1,6 +1,6 @@
 # NVIDIA AI 认证中文资料库（非官方）· JunzeXu
 
-> ⚠️ 本仓库为非官方个人学习笔记，与 NVIDIA 无关联；商标归 NVIDIA Corporation。官方 Study Guide 只挂直链、不存副本；全部题目为自编题，不含真题。
+> ⚠️ 本仓库为非官方个人学习笔记，与 NVIDIA 无关联；商标归 NVIDIA Corporation。官方 Study Guide 只挂直链、不存副本。
 
 **2026-10-12 开仓 · 目标：2026 年内完成 NCA-AIIO 首考（以官方预约为准）· 每天用 commit 公开进度**
 
@@ -8,7 +8,9 @@
 
 ## 这是什么
 
-NVIDIA 认证备考笔记（NCA 四门 + NCP 五门）、真机 labs、中英术语对照。每门考试的考纲来自官方 Study Guide，逐条拆解并标注覆盖度。
+NVIDIA 认证备考资料（NCA 四门初级 + NCP 六门中级）、真机 labs、中英术语对照。每门考试的考纲来自官方 Study Guide，逐条拆解并标注覆盖度。
+
+全站内容免费公开在线浏览，可按考试拆分 PDF（每门一个）下载复习，关注公众号「JunzeXuInfra」领取。
 
 给三种人用：**备考的人**（查覆盖度对照表）、**同样想转型的运维人**（按我的路线抄近道）、**招聘我的人**（看真实的动手记录，不是简历形容词）。
 
@@ -44,15 +46,15 @@ NVIDIA 认证备考笔记（NCA 四门 + NCP 五门）、真机 labs、中英术
 
 ## 内容边界（先说清楚，免得互相误会）
 
-- **本仓免费公开**：学习笔记、速查卡、闪卡、中英术语对照、真机 labs（脚本+输出+verify）、每域自编样题 10–15 道、官方 Study Guide 要点翻译
-- **站外付费（49 元冲刺包）**：整套模拟卷、错题详解——`mock/` 目录刻意留空并有说明
-- **红线**：官方 PDF 文件本身、真题/回忆题（dumps）永远不入仓、也不进付费包，详见 [meta/MAINTENANCE.md](meta/MAINTENANCE.md)
+- **全站免费公开**：学习笔记、速查卡、闪卡、中英术语对照、真机 labs、官方 Study Guide 要点翻译——全部在线浏览
+- **按考试拆分 PDF**：每门考试一个 PDF，方便离线复习，关注公众号「JunzeXuInfra」领取
+- **红线**：官方 PDF 文件本身、真题/回忆题（dumps）永远不入仓，详见 [meta/MAINTENANCE.md](meta/MAINTENANCE.md)
 
 ## 仓库地图
 
 ```
 ├── nca-aiio|nca-genl|nca-genm|nca-ads/   # NCA 初级四门
-├── ncp-aii|aio|ain|genl|aai|ads/   # NCP 中级六门（规划中）
+├── ncp-aii|aio|ain|genl|aai|ads/          # NCP 中级六门
 ├── common/               # 中英术语对照 · 各目录模板
 └── meta/                 # 免责 · 变更记录 · 维护规则 · LESSONS 踩坑手册
 ```
@@ -68,18 +70,20 @@ NVIDIA 认证备考笔记（NCA 四门 + NCP 五门）、真机 labs、中英术
 ├── notes/                # 考纲域笔记（按域编号）
 ├── cheatsheets/          # 速查卡
 ├── flashcards/           # 闪卡
-├── questions/            # 自编样题 + 官方演示题
 ├── labs/                 # 真机实操记录（脚本+输出+verify）
-├── mock/                 # 留壳导流（整卷不进仓）
 └── dli-courses.md        # 官方 DLI 免费课程清单 + 学习顺序建议
 ```
 
 ## 许可与引用
 
-文字内容 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)：欢迎转载学习，请署名且勿商用；labs 代码 MIT。本仓引用官方资料一律使用官方直链。
+文字内容基于 NVIDIA 官方公开资料整理，版权归原官方文档作者所有。本站原创部分采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans) 许可。labs 代码 MIT。
+
+## 领取 PDF
+
+关注微信公众号「JunzeXuInfra」，回复考试代码（如 `NCA-AIIO`），领取对应考试的完整 PDF（每门一份，离线可用）。
 
 ## 反馈
 
-发现题目或数字错误 → 开 Issue，改正后写进 CHANGELOG 并感谢你；后续 Discussions 兼作考生错题本。
+发现错误 → 开 Issue，改正后写进 CHANGELOG 并感谢你。
 
 —— [JunzeXu](https://github.com/junze-xu)，苏州。

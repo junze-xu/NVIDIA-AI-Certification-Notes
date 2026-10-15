@@ -24,7 +24,7 @@ export default function Home(): ReactNode {
       <header className="hero-banner">
         <div className="container">
           <h1>NVIDIA 认证备考站</h1>
-          <p>NCA 四门初级 + NCP 六门中级 · 中英双语 · 非官方学习笔记</p>
+          <p>NCA 四门初级 + NCP 六门中级 · 中文 · 非官方学习笔记</p>
           <div className="hero-buttons">
             <Link className="button button--primary button--lg" to="/docs/nca-aiio/overview">
               开始学习
@@ -60,7 +60,7 @@ export default function Home(): ReactNode {
         {/* 引流区 */}
         <section className="cta-section">
           <h2>领取完整备考资料</h2>
-          <p>关注公众号「JunzeXuInfra」，免费领取每门考试的【知识卡片 + 高频考点 + 模拟考试】样例。</p>
+          <p>关注公众号「JunzeXuInfra」，回复考试代码（如 NCA-AIIO），免费领取该考试完整 PDF。</p>
           <div className="cta-buttons">
             <Link className="button button--primary button--lg" to="/about">
               了解详情
