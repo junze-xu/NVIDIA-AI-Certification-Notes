@@ -17,7 +17,7 @@ NVIDIA 认证备考站是一个非官方的个人学习笔记集合，覆盖 NCA
 <div className="about-cta">
 
   <div className="about-cta__qr">
-    <img src="/img/wechat-qrcode.jpg" alt="公众号 JunzeXuInfra 二维码" width="180" />
+    <img src={require("./about/wechat-qrcode.jpg").default} alt="公众号 JunzeXuInfra 二维码" width="180" />
     <p>扫码关注，回复考试代码领 PDF</p>
   </div>
 
@@ -36,7 +36,7 @@ NVIDIA 认证备考站是一个非官方的个人学习笔记集合，覆盖 NCA
 
 长按保存下方图片，转发到朋友圈引导朋友扫码关注：
 
-<img src="/img/about/wechat-promo.png" alt="关注 JunzeXuInfra" className="about-promo-img" />
+<img src={require("./about/wechat-promo.png").default} alt="关注 JunzeXuInfra" className="about-promo-img" />
 
 ## 版权声明
 
