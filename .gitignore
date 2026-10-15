@@ -14,3 +14,10 @@ build/
 meta/
 ARCHIVE_INDEX.md
 PRODUCTS.md
+
+# Generated PDFs
+/pdfs/
+*.pdf
+
+# Debug log
+mdpdf.log
