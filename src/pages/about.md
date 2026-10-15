@@ -12,14 +12,31 @@ NVIDIA 认证备考站是一个非官方的个人学习笔记集合，覆盖 NCA
 
 给三种人用：**备考的人**（每门考试按 PDF 复习）、**同样想转型的运维人**（按我的路线抄近道）、**招聘我的人**（看真实的动手记录，不是简历形容词）。
 
-## 内容导流 · 关注公众号
+## 关注公众号「JunzeXuInfra」
 
-| 渠道 | 内容 | 如何获取 |
-|---|---|---|
-| 本仓库（GitHub Pages） | 全部在线浏览 | 直接访问 |
-| 微信公众号 | 完整 PDF 样例 + 更新推送 | 关注「JunzeXuInfra」，回复考试代码 |
+<div className="about-cta">
 
-完整 PDF 按考试拆分，每门一份，离线可用。关注公众号「JunzeXuInfra」，回复考试代码（如 `NCA-AIIO`）即可领取。
+  <div className="about-cta__qr">
+    <img src="/img/wechat-qrcode.jpg" alt="公众号 JunzeXuInfra 二维码" width="180" />
+    <p>扫码关注，回复考试代码领 PDF</p>
+  </div>
+
+  <div className="about-cta__text">
+    <h3>你能从这里拿到什么</h3>
+    <ul>
+      <li>📱 <strong>完整 PDF</strong>：每门考试一份，离线可用</li>
+      <li>📢 <strong>更新推送</strong>：新内容上线第一时间通知</li>
+      <li>💬 <strong>错题讨论</strong>：公众号后台直接反馈</li>
+    </ul>
+  </div>
+
+</div>
+
+## 朋友圈转发素材
+
+长按保存下方图片，转发到朋友圈引导朋友扫码关注：
+
+<img src="/img/about/wechat-promo.png" alt="关注 JunzeXuInfra" className="about-promo-img" />
 
 ## 版权声明
 
