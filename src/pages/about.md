@@ -32,12 +32,6 @@ NVIDIA 认证备考站是一个非官方的个人学习笔记集合，覆盖 NCA
 
 </div>
 
-## 朋友圈转发素材
-
-长按保存下方图片，转发到朋友圈引导朋友扫码关注：
-
-<img src={require("./about/wechat-promo.png").default} alt="关注 JunzeXuInfra" className="about-promo-img" />
-
 ## 版权声明
 
 - 全部内容基于 NVIDIA 官方公开资料整理，版权归原官方文档作者所有
