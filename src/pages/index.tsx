@@ -2,6 +2,7 @@ import type {ReactNode} from 'react';
 import useDocusaurusContext from '@docusaurus/core/lib/client/exports/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import qrCode from './qrcode.jpg';
 import './index.css';
 
 const exams = [
@@ -59,12 +60,23 @@ export default function Home(): ReactNode {
 
         {/* 引流区 */}
         <section className="cta-section">
-          <h2>领取完整备考资料</h2>
-          <p>关注公众号「JunzeXuInfra」，回复考试代码（如 NCA-AIIO），免费领取该考试完整 PDF。</p>
-          <div className="cta-buttons">
-            <Link className="button button--primary button--lg" to="/about">
-              了解详情
-            </Link>
+          <h2 className="section-title">领取完整备考资料</h2>
+          <div className="cta-card">
+            <div className="cta-card__qr">
+              <img src={qrCode} alt="公众号 JunzeXuInfra 二维码" width="160" />
+              <span>扫码关注</span>
+            </div>
+            <div className="cta-card__info">
+              <p>关注公众号「JunzeXuInfra」，回复考试代码（如 <code>NCA-AIIO</code>），免费领取该考试完整 PDF。</p>
+              <ul className="cta-card__perks">
+                <li>每门一份，离线可用</li>
+                <li>更新推送第一时间通知</li>
+                <li>公众号后台直接反馈错误</li>
+              </ul>
+              <Link className="button button--primary button--lg" to="/about">
+                了解详情 →
+              </Link>
+            </div>
           </div>
         </section>
       </main>

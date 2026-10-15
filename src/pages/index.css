@@ -103,30 +103,80 @@
   color: var(--ifm-color-emphasis-600);
 }
 
-/* CTA 引流区 */
+/* CTA 引流区 — 方案 A：左二维码 + 右信息 */
 .cta-section {
   margin-top: 3rem;
   padding: 2.5rem 2rem;
-  text-align: center;
   border-radius: 12px;
   background: var(--ifm-color-emphasis-100);
   border: 1px solid var(--ifm-color-emphasis-200);
 }
 
-.cta-section h2 {
-  margin-bottom: 0.75rem;
-  color: var(--ifm-heading-color);
-}
-
-.cta-section p {
-  color: var(--ifm-color-content);
-  margin-bottom: 1.5rem;
-  font-size: 1.05rem;
-}
-
-.cta-buttons {
+.cta-card {
   display: flex;
-  gap: 1rem;
-  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
   flex-wrap: wrap;
+}
+
+.cta-card__qr {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.cta-card__qr img {
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 0.4rem;
+  border: 2px solid var(--ifm-color-emphasis-200);
+}
+
+.cta-card__qr span {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.cta-card__info {
+  flex: 1;
+  min-width: 240px;
+}
+
+.cta-card__info p {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-content);
+}
+
+.cta-card__info p code {
+  background: var(--ifm-color-emphasis-200);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.cta-card__perks {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.cta-card__perks li {
+  padding: 2px 0;
+}
+
+.cta-card__info .button {
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 600px) {
+  .cta-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cta-card__info {
+    min-width: auto;
+  }
 }
