@@ -14,6 +14,8 @@ NVIDIA 认证备考资料（NCA 四门初级 + NCP 六门中级）、真机 labs
 
 **在线浏览**：[https://junze-xu.github.io/NVIDIA-AI-Certification-Notes/](https://junze-xu.github.io/NVIDIA-AI-Certification-Notes/)
 
+English version → [README.en.md](README.en.md)
+
 这里适合三种人：**备考的人**——十门考试逐域拆解，按自己节奏复习；**想转型的人**——想用NVIDIA 认证体系系统补齐 GPU/AI 知识的人；**交流讨论的人**——Issue / Discussions 里反馈错题，一起把资料改得更准。
 
 ## 怎么读这个仓库

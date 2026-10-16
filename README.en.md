@@ -14,6 +14,8 @@ All content is freely available online. You can also download per-exam PDFs (one
 
 **Browse online**: [https://junze-xu.github.io/NVIDIA-AI-Certification-Notes/](https://junze-xu.github.io/NVIDIA-AI-Certification-Notes/)
 
+中文版 → [README.md](README.md)
+
 This repo is for three kinds of people: **those preparing for exams** — ten exams decomposed by domain, study at your own pace; **career changers** — those who want to use NVIDIA's certification system to fill GPU/AI knowledge gaps; **discussants** — report wrong answers in Issues / Discussions, and help make the materials more accurate.
 
 ## How to Read This Repository
