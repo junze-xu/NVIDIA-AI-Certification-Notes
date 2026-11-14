@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'NVIDIA 认证备考站',
-  tagline: 'NCA + NCP 十门认证 · 中英双语 · 非官方',
+  title: 'NVIDIA AI Certification Notes',
+  tagline: '十门 NVIDIA 认证逐域拆解 · 中文 · 非官方学习笔记',
   favicon: 'img/favicon.ico',
   url: 'https://junze-xu.github.io',
   baseUrl: '/NVIDIA-AI-Certification-Notes/',
@@ -43,8 +43,8 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'NVIDIA 认证备考站',
-      logo: {alt: 'Logo', src: 'img/logo.svg'},
+      title: 'NVIDIA AI Certification Notes',
+      logo: {alt: 'NVIDIA Certification Notes', src: 'img/logo.svg'},
       items: [
         {
           type: 'docSidebar',
@@ -58,7 +58,7 @@ const config: Config = {
           position: 'left',
           label: 'NCP 中级',
         },
-        {href: '/about', label: '关于', position: 'left'},
+        {href: '/about', label: '关于本站', position: 'left'},
         {
           type: 'html',
           position: 'right',
@@ -83,7 +83,7 @@ const config: Config = {
           href: 'https://github.com/junze-xu/NVIDIA-AI-Certification-Notes',
         },
       ],
-      copyright: `© ${new Date().getFullYear()} JunzeXu · CC BY-NC-SA 4.0 · 非 NVIDIA 官方`,
+      copyright: `© ${new Date().getFullYear()} JunzeXu · 非 NVIDIA 官方 · CC BY-NC-SA 4.0`,
     },
     prism: {
       theme: prismThemes.github,

@@ -7,13 +7,25 @@
 
 .hero-banner h1 {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.02em;
 }
 
-.hero-banner p {
-  font-size: 1.2rem;
-  opacity: 0.9;
+.hero-subtitle {
+  font-size: 1.15rem;
+  opacity: 0.95;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.hero-desc {
+  font-size: 0.95rem;
+  opacity: 0.75;
   margin-bottom: 2rem;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
 .hero-buttons {

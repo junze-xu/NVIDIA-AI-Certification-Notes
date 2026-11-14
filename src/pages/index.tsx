@@ -24,8 +24,9 @@ export default function Home(): ReactNode {
     <Layout title={`${siteConfig.title}`} description={siteConfig.tagline}>
       <header className="hero-banner">
         <div className="container">
-          <h1>NVIDIA 认证备考站</h1>
-          <p>NCA 四门初级 + NCP 六门中级 · 中文 · 非官方学习笔记</p>
+          <h1>NVIDIA AI Certification Notes</h1>
+          <p className="hero-subtitle">NCA 四门初级 + NCP 六门中级 · 中文 · 非官方学习笔记</p>
+          <p className="hero-desc">基于官方 Study Guide 逐域拆解，覆盖度透明可查，每天公开进度。备考、转型、交流，一站搞定。</p>
           <div className="hero-buttons">
             <Link className="button button--primary button--lg" to="/docs/nca-aiio/overview">
               开始学习
@@ -38,7 +39,7 @@ export default function Home(): ReactNode {
       </header>
 
       <main className="container padding-vert--lg">
-        <h2 className="section-title">十门考试总览</h2>
+        <h2 className="section-title">十门认证 · 每门独立入口</h2>
         <div className="exam-grid">
           {exams.map((ex) => (
             <Link
@@ -60,7 +61,7 @@ export default function Home(): ReactNode {
 
         {/* 引流区 */}
         <section className="cta-section">
-          <h2 className="section-title">领取完整备考资料</h2>
+          <h2 className="section-title">需要离线 PDF？</h2>
           <div className="cta-card">
             <div className="cta-card__qr">
               <img src={qrCode} alt="公众号 JunzeXuInfra 二维码" width="160" />
