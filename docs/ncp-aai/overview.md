@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: 考试概览
+description: NCP-AAI（Agentic AI）考试概览：费用与时长、面向人群、高频易混考点与备考路径，附中文学习笔记与离线 PDF。
 ---
 
 # NCP-AAI · Agentic AI Professional

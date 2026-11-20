@@ -34,21 +34,37 @@
   flex-wrap: wrap;
 }
 
+.about-cta__qrs {
+display: flex;
+gap: 1.5rem;
+flex-wrap: wrap;
+flex-shrink: 0;
+}
+
 .about-cta__qr {
-  text-align: center;
-  flex-shrink: 0;
+text-align: center;
 }
 
 .about-cta__qr img {
-  border-radius: 8px;
-  display: block;
-  margin: 0 auto 0.5rem;
+width: 180px;
+height: 180px;
+object-fit: contain;
+background: #fff;
+padding: 6px;
+border: 1px solid var(--ifm-color-emphasis-200);
+border-radius: 12px;
+display: block;
+margin: 0 auto 0.5rem;
 }
 
 .about-cta__qr p {
-  font-size: 0.85rem;
-  color: var(--ifm-color-emphasis-600);
-  margin: 0;
+font-size: 0.85rem;
+color: var(--ifm-color-emphasis-600);
+margin: 0;
+}
+
+.about-cta__qr strong {
+color: var(--ifm-color-emphasis-800);
 }
 
 .about-cta__text {

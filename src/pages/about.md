@@ -1,5 +1,6 @@
 ---
 title: 关于
+description: NVIDIA AI Certification Notes 是 NVIDIA NCA/NCP 十门认证的非官方中文学习笔记站，含考试概览、速查手册、题库与离线 PDF。
 ---
 
 # 关于本站
@@ -12,13 +13,20 @@ NVIDIA 认证备考站是一个非官方的个人学习笔记集合，覆盖 NCA
 
 这里适合三种人：**备考的人**——十门考试逐域拆解，按自己节奏复习；**想转型的人**——想用 NVIDIA 认证体系系统补齐 GPU/AI 知识的人；**交流讨论的人**——Issue / Discussions 里反馈错题，一起把资料改得更准。
 
-## 关注公众号「JunzeXuInfra」
+## 关注公众号「JunzeXuInfra」· 个人微信「JunzeXu」
 
 <div className="about-cta">
 
-  <div className="about-cta__qr">
-    <img src={require("./about/wechat-qrcode.jpg").default} alt="公众号 JunzeXuInfra 二维码" width="180" />
-    <p>扫码关注，回复考试代码领 PDF</p>
+  <div className="about-cta__qrs">
+    <div className="about-cta__qr">
+      <img src={require("./about/wechat-qrcode.jpg").default} alt="公众号 JunzeXuInfra 二维码" />
+      <p>公众号 <strong>JunzeXuInfra</strong><br />回复考试代码领 PDF</p>
+    </div>
+
+    <div className="about-cta__qr">
+      <img src={require("./about/wechat-personal.jpg").default} alt="个人微信 JunzeXu 二维码" />
+      <p>个人微信 <strong>JunzeXu</strong><br />聊 AI / 合作 / 交流</p>
+    </div>
   </div>
 
   <div className="about-cta__text">
@@ -46,3 +54,7 @@ NVIDIA 认证备考站是一个非官方的个人学习笔记集合，覆盖 NCA
 ## 反馈
 
 发现错误 → 欢迎到 [GitHub Issues](https://github.com/junze-xu/NVIDIA-AI-Certification-Notes/issues) 指正，改正后会更新 PDF。
+
+## 更多项目
+
+作者的其他公开项目（技术博客、GitHub Trending 周榜、Grok Bot 模板库）见 [junze-xu.github.io](https://junze-xu.github.io/)。
