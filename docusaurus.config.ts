@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'NVIDIA AI Certification Notes',
-  tagline: '十门 NVIDIA 认证逐域拆解 · 中文 · 非官方学习笔记',
+  tagline: 'NCA / NCP 认证逐域拆解 · 中文 · 非官方学习笔记',
   favicon: 'img/favicon.ico',
   url: 'https://junze-xu.github.io',
   baseUrl: '/NVIDIA-AI-Certification-Notes/',
